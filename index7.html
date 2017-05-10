@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+
+<html>
+<!--info narsyklei
+--->
+	<head> 
+	<!--info apie tinklalapį:pav, autorius, zodziai
+--->
+	<title>pavadinimas_irena</title>
+	<!--after 10s goes to google
+	<meta http-equiv="refresh" content="3;url=http://www.google.com/"/> 
+	
+--->
+	<meta charset = "UTF-8"/>
+	<meta name = "keywords" content = "cv"/>
+	<meta name = "author" content = "Irena P"/>
+	
+	<style>
+	
+	main{
+	width:800px;
+	height:900px;
+	
+	}
+	
+	header{
+	background-color:yellow;
+	width:820px;
+	height:100px;
+	text-align:center;
+	}
+	
+	
+	
+	section{
+	border: 10px solid green;
+	width:800px;
+	height:800px;
+	}
+	
+	
+	</style>
+	</head>
+	
+	<body>
+	
+	<main>
+	
+	<header>
+	<h2>Forma</h2>
+	<p>Prašau užpildyti:</p>
+	</header>
+	
+	
+	
+	<section>
+	
+	<p>Text: <input type="text" name="text1" autofocus/> </p>
+	<p>Password: <input type="password" name="password1"/> </p>
+	<p>Date: <input type="date" name="date1"/> </p>
+	<p>Email: <input type="email" name="email1" multiple/> </p>
+	<p>Age: <input type="age" name="age1" min="1" max="100" value="1"/> </p>
+	<p>Location:<br/>
+	<select name="select">
+	<option value="vilnius">Vilnius</option>
+	<option value="kaunas">Kaunas</option>
+	<option value="klaipeda">Klaipeda</option>
+	</select>
+	
+	<form id="f" onsubmit="return diplay()" method ="post">
+	<p>Do you have a car?
+	<input type="checkbox" name="check1" value="yes">yes<br>
+	<input type="checkbox" name="check2" value="no">no<br> 
+	</p>
+
+	<p>Do you have children?
+	<input type="radio" name="radiok1" value="yes">yes<br>
+	<input type="radio" name="radio2" value="no">no<br> 
+	</p>
+
+	<p>Your dream:</p>
+	<p> <textarea name="textarea1"> </textarea> </p>
+	
+	<p> <input type="submit" name="submit1" value="Mygtukas" onclick= "return display ()" /> </p>
+		
+
+</form>
+	</section>
+	
+	
+
+	</main>
+	</body>
+	
+	
+</html>
